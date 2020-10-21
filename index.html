@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>formation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/781bdd086b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -32,9 +33,17 @@
             <h1 class="hero_header">
                 Master the Coding Skills to Become an Engineer Companies LOVE to Hire
             </h1>
-            <video class="hero_video" poster="img/skill.jpg" controls>
-                <source src="https://www.youtube.com/watch?v=Ip_jOSpThSg" type="video/mp4" />
-            </video>
+            <div class="hero_video">
+                <div class="videoWrapper videoWrapper169 js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" 
+                    src="" 
+                    frameborder="0" 
+                    allowTransparency="true" 
+                    allowfullscreen data-src="https://www.youtube.com/embed/Ip_jOSpThSg?autoplay=1&controls=0&modestbranding=0&rel=0"></iframe>
+                    <!-- ?autoplay=1& modestbranding=1&rel=0 -->
+                    <button class="videoPoster js-videoPoster" style="background-image:url(./img/skill.jpg);">Play video</button>
+                </div>
+            </div>
             <h1 class="hero_text">
                 Hi! My name is iliess houari. My life’s mission is to help novice and
                 professional software engineers increase their skills, make more money
@@ -72,8 +81,9 @@
                             My inner child is very complex, and I want to cut back. A bit of stoic candy, I say.
                             #flashball
                             #randomtweet
-                        <img src="img/right-quote-sign.svg" alt="">
-                    </p></div>
+                            <img src="img/right-quote-sign.svg" alt="">
+                        </p>
+                    </div>
                 </div>
                 <div class="review">
                     <div class="review_header">
@@ -116,7 +126,7 @@
                     <div class="review_disc">
                         <p>
                             <img src="img/left-quote.svg" alt="">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
                             <img src="img/right-quote-sign.svg" alt="">
                         </p>
@@ -195,13 +205,13 @@
                     </div>
                     <div class="course_disc">
                         <a id="color_me" href="">
-                            <h3 >All-Access Subscription
+                            <h3>All-Access Subscription
                         </a>
                         </h3>
                         <p>Become the best coder you can be with unlimited access to all the existing and future courses
                         </p>
                     </div>
-                    <div class="course_instructeur course_buy">
+                    <div class="course_instructor course_buy">
                         <p>32 Course Bundle
                         </p>
                     </div>
@@ -216,7 +226,7 @@
                         <p>Everything you need to know to use Git & GitHub to work effectively as a team
                         </p>
                     </div>
-                    <div class="course_instructeur">
+                    <div class="course_instructor">
                         <img src="img/1664073729180677_c5_720x720.jpeg" alt="">
                         <p>houari ilies</p>
                     </div>
@@ -231,7 +241,7 @@
                         <p>Everything you need to program in Python in one course (includes 3 real-world projects)
                         </p>
                     </div>
-                    <div class="course_instructeur">
+                    <div class="course_instructor">
                         <img src="img/icon-removebg-preview (1).png" alt="">
                         <p>Benhalima Abderahman</p>
                     </div>
@@ -246,7 +256,7 @@
                         <p>Master Java - the most popular programming language underpinning most apps and websites
                         </p>
                     </div>
-                    <div class="course_instructeur">
+                    <div class="course_instructor">
                         <img src="img/icon-removebg-preview (1).png" alt="">
                         <p>Benhalima Abderahman</p>
                     </div>
@@ -258,10 +268,11 @@
                             <h3>Mastering React
                         </a>
                         </h3>
-                        <p>Don't get left behind. React is the way forward to building fast, interactive web apps. This course covers everything.
+                        <p>Don't get left behind. React is the way forward to building fast, interactive web apps. This
+                            course covers everything.
                         </p>
                     </div>
-                    <div class="course_instructeur">
+                    <div class="course_instructor">
                         <img src="img/1664073729180677_c5_720x720.jpeg" alt="">
                         <p>houari ilies</p>
                     </div>
@@ -276,16 +287,18 @@
                         <p>Learn to build highly-scalable, fast and secure RESTful APIs with Node, Express, and MongoDB.
                         </p>
                     </div>
-                    <div class="course_instructeur">
+                    <div class="course_instructor">
                         <img src="img/1664073729180677_c5_720x720.jpeg" alt="">
                         <p>Houari ilies</p>
                     </div>
                 </div>
             </div>
             <div class="course_view_all">
-                <div class="course_buy course_btn"> <p>view all courses</p> </div>
+                <div class="course_buy course_btn">
+                    <p>view all courses</p>
+                </div>
                 <p>Not sure where to start? Check out our</p>
-                <a href="#" >learning paths</a>
+                <a href="#">learning paths</a>
             </div>
         </section>
         <section class="subscription">
@@ -308,10 +321,10 @@
                 </div>
                 <h3 class="subscription_text_bold">30-Day Money-Back Guarantee</h3>
                 <p>What do you have to lose?</p>
-                <img src="img/checkout-badge-1.svg" alt="" class="subscription_gurantee_logo">
-    
+                <img src="img/checkout-badge-1.svg" alt="" class="subscription_guarantee_logo">
+
             </div>
-        
+
         </section>
         <footer>
             <div class="social_media">
@@ -322,30 +335,35 @@
                 </ul>
             </div>
             <div class="footer">
-                <div class=" Terms of Use">
+
+                <div class="contact">
+                    <div class="contact_text">
+                        <p>Phone :</p>
+                        <p id="empty">d</p>
+                        <p>address :</p>
+                        <p>email :</p>
+                    </div>
+                    <div class="contact_info">
+                        <p>+213793299694</p>
+                        <p>+213795857378</p>
+                        <p>Mascara, algeria</p>
+                        <p>iliessnp@gmail.com</p>
+                    </div>
+                </div>
+                <div class=" Terms_of_Use">
                     Terms of Use <br>
                     Privacy Policy
-                </div>
-                <div class="contact">
-                    <div class="contact_phone">
-                        <p class="contact_phone_paralel"> phone :</p>
-                        <div class="contact_phone_inline">
-                            <p> +213793299694</p>
-                            <p> +213795857378</p>
-                        </div>
-                    </div>
-                    <p>address : Mascara, algeria</p>
-                    <p>email: iliessnp@gmail.com</p>
                 </div>
                 <div class="copyright">
                     <a href="#">
                         <p>© Houari ilies 2020 - all rights reserved</p>
-
                     </a>
                 </div>
             </div>
         </footer>
     </main>
+    <script src="app.js"></script>
 </body>
 
 </html>
+
